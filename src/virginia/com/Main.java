@@ -19,19 +19,19 @@ public class Main {
         System.out.println();
         
         try {
-            if (lowerCaseOp.equals("add")) {
+            if (lowerCaseOp.equals("add") || operation.equals("+")) {
                 System.out.println("...now adding...");
                 Add addition = new Add();
                 addition.calculate(Double.parseDouble(firstNum), Double.parseDouble(secondNum));
-            } else if (lowerCaseOp.equals("subtract")) {
+            } else if (lowerCaseOp.equals("subtract") || operation.equals("-")) {
                 System.out.println("...now subtracting...");
                 Subtract subtract = new Subtract();
                 subtract.calculate(Double.parseDouble(firstNum), Double.parseDouble(secondNum));
-            } else if (lowerCaseOp.equals("multiply")) {
+            } else if (lowerCaseOp.equals("multiply") || operation.equals("*")) {
                 System.out.println("...now multiplying...");
                 Multiply multiply = new Multiply();
                 multiply.calculate(Double.parseDouble(firstNum), Double.parseDouble(secondNum));
-            } else if (lowerCaseOp.equals("divide")) {
+            } else if (lowerCaseOp.equals("divide") || operation.equals("/")) {
                 System.out.println("...now dividing...");
                 Divide divide = new Divide();
                 divide.calculate(Double.parseDouble(firstNum), Double.parseDouble(secondNum));
