@@ -14,9 +14,9 @@ public class Main {
         System.out.println("Enter your second number: ");
         String secondNum = scanner.next();
         System.out.println("Enter the operation: ");
+        System.out.println("Add(+), Subtract(-), Multiply(*), Divide(/)");
         String operation = scanner.next();
         String lowerCaseOp = operation.toLowerCase();
-        System.out.println();
         
         try {
             if (lowerCaseOp.equals("add") || operation.equals("+")) {
