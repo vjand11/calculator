@@ -1,6 +1,6 @@
 package virginia.com;
 
-public class Subtract {
+public class Subtract implements Calculate {
 
     private double firstNum;
     private double secondNum;
@@ -12,9 +12,11 @@ public class Subtract {
         this.secondNum = secondNum;
     }
 
+    @Override
     public void calculate(double firstVal, double secondVal) {
         double result = (firstVal - secondVal);
-        System.out.println("Your result is " + result);
+        System.out.println("Your result is " + result +
+                " (" + firstVal + " - " + secondVal + ")");
     }
 
     public double getFirstNum() {

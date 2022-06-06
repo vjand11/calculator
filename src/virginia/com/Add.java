@@ -1,6 +1,6 @@
 package virginia.com;
 
-public class Add {
+public class Add implements Calculate{
 
     private double firstNum;
     private double secondNum;
@@ -13,9 +13,11 @@ public class Add {
         this.secondNum = secondNum;
     }
 
+    @Override
     public void calculate(double firstVal, double secondVal) {
         double result = firstVal + secondVal;
-        System.out.println("Your result is " + result);
+        System.out.println("Your result is " + result +
+                " (" + firstVal + " + " + secondVal + ")" );
     }
 
     public double getFirstNum() {

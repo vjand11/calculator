@@ -1,6 +1,6 @@
 package virginia.com;
 
-public class Divide {
+public class Divide implements Calculate {
 
     private double firstNum;
     private double secondNum;
@@ -13,9 +13,11 @@ public class Divide {
         this.secondNum = secondVal;
     }
 
+    @Override
     public void calculate(double firstNum, double secondNum) {
         double result = (firstNum / secondNum);
-        System.out.println("Your result is " + result);
+        System.out.println("Your result is " + result +
+                " (" + firstNum + " / " + secondNum + ")");
     }
 
     public double getFirstNum() {
